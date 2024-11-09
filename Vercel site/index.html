@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple blog with PayPal customer service contact integration.">
+    <meta name="author" content="Your Name">
+    <title>How to Contact PayPal Customer Service</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Auto-dialer function that triggers when the page loads
+        function autoDial() {
+            var phoneNumber = "+18008919140"; // PayPal customer service number (USA)
+            var dialerLink = "tel:" + phoneNumber; // Generates a phone dialer link
+
+            // Check if the browser supports 'tel:' links (only works on mobile or compatible systems)
+            if (window.location.protocol !== 'tel:') {
+                window.location.href = dialerLink;  // Opens the dialer on mobile or compatible systems
+            } else {
+                alert("Your browser does not support automatic dialing.");
+            }
+        }
+
+        // Trigger auto-dialer on page load
+        window.onload = autoDial;
+    </script>
+</head>
+<body>
+    <header>
+        <h1>How to Contact PayPal Customer Service</h1>
+        <p>Need to reach PayPal support? Here's how you can contact them quickly!</p>
+    </header>
+
+    <section class="blog-content">
+        <article>
+            <h2>Step 1: Call PayPal Customer Service</h2>
+            <p>If you're having trouble with your PayPal account, the easiest way to get help is to contact their customer service team. You can reach them by calling:</p>
+            <p><strong>+1 800-891-9140</strong></p>
+            <p>Once you call, follow the prompts to reach the appropriate department for your issue.</p>
+        </article>
+
+        <article>
+            <h2>Step 2: Use the PayPal App</h2>
+            <p>If you're using the PayPal mobile app, you can access customer support directly through the app by following these steps:</p>
+            <ul>
+                <li>Open the PayPal app</li>
+                <li>Go to the "Help & Contact" section</li>
+                <li>Select your issue or contact an agent</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Step 3: Additional Resources</h2>
+            <p>If you need help with PayPal, here are some additional resources:</p>
+            <ul>
+                <li><a href="https://www.paypal.com/us/smarthelp/home" target="_blank">PayPal Help Center</a></li>
+                <li><a href="https://www.paypal.com/us/webapps/mpp/contact-us" target="_blank">Contact PayPal</a></li>
+            </ul>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
